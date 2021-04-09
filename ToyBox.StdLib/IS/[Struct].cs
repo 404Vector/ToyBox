@@ -79,7 +79,7 @@ namespace HYCK.Base.StdL.IS
     {
     }
 
-    public class St_WESurfaceProperty : InspectionProperty
+    public class St_WESurfaceProperty : NotifyPropertyChanged
     {
         public long OffsetX { get; set; }
         public long OffsetY { get; set; }
@@ -90,7 +90,7 @@ namespace HYCK.Base.StdL.IS
         public int MinDetectHeight { get; set; }
     }
 
-    public class St_WEProfileProperty : InspectionProperty
+    public class St_WEProfileProperty : NotifyPropertyChanged
     {
         public double Sensitivity { get; set; } = 1;
         public double Shifting { get; set; } = 1;
@@ -102,14 +102,14 @@ namespace HYCK.Base.StdL.IS
         public bool IsEnableResultImageSave { get; set; } = false;
     }
 
-    public class St_WSSBDProperty : InspectionProperty
+    public class St_WSSBDProperty : NotifyPropertyChanged
     {
         public byte ThreasholdValue { get; set; } = 40;
         public int MinDetectWidth { get; set; } = 3;
         public int MinDetectHeight { get; set; } = 3;
     }
 
-    public class St_WSTICProperty : InspectionProperty
+    public class St_WSTICProperty : NotifyPropertyChanged
     {
         public double ThreasholdValue { get; set; } = 240;
         public double DeltaThreashold { get; set; } = 20;
@@ -122,20 +122,5 @@ namespace HYCK.Base.StdL.IS
         public bool IsEnablePadErase { get; set; } = true;
         public bool IsEnableResultImageSave { get; set; } = false;
         public bool IsEnableRawResultImageSave { get; set; } = false;
-    }
-
-    public struct St_ScanProperty
-    {
-        public int SliceIndex { get; set; }
-        public int ScanIndexMax { get; set; }
-        public long ScanFOVWidth { get; set; }
-        public long ScanFOVHeight { get; set; }
-        public int ScanPlanPitch { get; set; }
-        public DirectionType ScanDirection { get; set; }
-        public ScanType ScanType { get; set; }
-        public WaferType WaferDia { get; set; }
-
-        [XmlIgnore]
-        public InspectionProperty InspectionProperty { get; set; }
     }
 }

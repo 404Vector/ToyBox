@@ -9,5 +9,4 @@
   <ItemGroup>
     <ProjectReference Include="..\ToyBox.StdLib\ToyBox.StdLib.csproj" />
   </ItemGroup>
-
 </Project>

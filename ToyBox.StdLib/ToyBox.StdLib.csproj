@@ -9,6 +9,7 @@
     <PackageReference Include="MahApps.Metro" Version="2.4.4" />
     <PackageReference Include="MahApps.Metro.IconPacks" Version="4.8.0" />
     <PackageReference Include="MvvmLight" Version="5.4.1.1" />
+    <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1.1" />
     <PackageReference Include="OpenCvSharp4" Version="4.5.2.20210404" />
     <PackageReference Include="OpenCvSharp4.runtime.win" Version="4.5.2.20210404" />
     <PackageReference Include="OpenCvSharp4.Windows" Version="4.5.2.20210404" />

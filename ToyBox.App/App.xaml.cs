@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using ToyBox.App.GUI.ViewModel;
 
 namespace ToyBox.App
 {
@@ -13,5 +14,13 @@ namespace ToyBox.App
     /// </summary>
     public partial class App : Application
     {
+        private ViewModelLocator locator;
+
+        public ViewModelLocator Locator => locator;
+
+        private void Application_Startup(object sender, StartupEventArgs e)
+        {
+            locator = Resources["Locator"] as ViewModelLocator;
+        }
     }
 }

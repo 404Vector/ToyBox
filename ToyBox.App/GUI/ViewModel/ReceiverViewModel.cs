@@ -14,7 +14,7 @@ namespace ToyBox.App.GUI.ViewModel
             set
             {
                 _contentText = value;
-                RaisePropertyChanged("ContentText");
+                RaisePropertyChanged(nameof(ContentText));
             }
         }
 

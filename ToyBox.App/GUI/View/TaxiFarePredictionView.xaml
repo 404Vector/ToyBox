@@ -13,17 +13,23 @@
     <StackPanel>
         <GroupBox Header="Input">
             <StackPanel DataContext="{Binding ModelInputProperty}">
+                <Label Content="Vendor_id" />
                 <TextBox Text="{Binding Vendor_id, UpdateSourceTrigger=PropertyChanged}" />
+                <Label Content="Rate_code" />
                 <TextBox Text="{Binding Rate_code, UpdateSourceTrigger=PropertyChanged}" />
+                <Label Content="Passenger_count" />
                 <TextBox Text="{Binding Passenger_count, UpdateSourceTrigger=PropertyChanged}" />
+                <Label Content="Trip_distance" />
                 <TextBox Text="{Binding Trip_distance, UpdateSourceTrigger=PropertyChanged}" />
+                <Label Content="Payment_type" />
                 <TextBox Text="{Binding Payment_type, UpdateSourceTrigger=PropertyChanged}" />
             </StackPanel>
         </GroupBox>
         <GroupBox Header="Output">
             <StackPanel DataContext="{Binding ModelOutputProperty}">
-                
-            <TextBlock Text="{Binding Score, UpdateSourceTrigger=PropertyChanged}" />
+
+                <Label Content="Score" />
+                <TextBox Text="{Binding Score, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" />
             </StackPanel>
         </GroupBox>
         <Button Content="Predict"  Height="25" Width="200">

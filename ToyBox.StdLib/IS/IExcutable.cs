@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HYCK.Base.StdL.IS
+namespace ToyBox.StdLib.IS
 {
     public interface IExcutable
     {

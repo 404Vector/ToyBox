@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ToyBox.ML.TaxiFarePrediction\ToyBox.ML.TaxiFarePrediction.csproj" />
     <ProjectReference Include="..\ToyBox.StdLib\ToyBox.StdLib.csproj" />
   </ItemGroup>
 </Project>

@@ -23,7 +23,6 @@ namespace ToyBox.App.GUI.View
         public ReceiverView()
         {
             InitializeComponent();
-            var k = DataContext;
         }
     }
 }

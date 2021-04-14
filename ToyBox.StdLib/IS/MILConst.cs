@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HYCK.Base.StdL.IS
+namespace ToyBox.StdLib.IS
 {
     public static class MILConst
     {
@@ -11839,6 +11839,5 @@ namespace HYCK.Base.StdL.IS
         public const double M_DEF_STRING_LOC_MAX_CHAR_SIZE = 1.5;
         public const double M_DEF_STRING_LOC_MAX_CHAR_DISTANCE = 0.5;
         public const double M_DEF_STRING_LOC_GOOD_CHAR_SIZE = 0.9;
-
     }
 }

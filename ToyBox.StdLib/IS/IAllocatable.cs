@@ -1,4 +1,4 @@
-﻿namespace HYCK.Base.StdL.IS
+﻿namespace ToyBox.StdLib.IS
 {
     public interface IAllocatable
     {

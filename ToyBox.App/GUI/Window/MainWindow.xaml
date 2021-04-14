@@ -9,15 +9,24 @@
         xmlns:view="clr-namespace:ToyBox.App.GUI.View"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" />
-            <ColumnDefinition Width="Auto" />
-        </Grid.ColumnDefinitions>
-        <view:ReceiverView Grid.Row="0" Grid.Column="0" />
-        <view:SenderView Grid.Row="0" Grid.Column="1" Foreground="Black" Background="#FFBA33CF" />
-        <GridSplitter HorizontalAlignment="Left" Width="5" Height="320" Margin="245, 0, 0, -21" />
+        <mah:MetroAnimatedTabControl>
+            <TabItem Header="TaxiFarePrediction">
+                <view:TaxiFarePredictionView />
+            </TabItem>
+            <TabItem Header="MVVM Test">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <view:ReceiverView Grid.Row="0" Grid.Column="0" />
+                    <view:SenderView Grid.Row="0" Grid.Column="1" Foreground="Black" Background="#FFBA33CF" />
+                    <GridSplitter HorizontalAlignment="Left" Width="5" Height="320" Margin="245, 0, 0, -21" />
+                </Grid>
+            </TabItem>
+        </mah:MetroAnimatedTabControl>
     </Grid>
 </mah:MetroWindow>

@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-using static HYCK.Base.StdL.IS.MILConst;
+using static ToyBox.StdLib.IS.MILConst;
 
-namespace HYCK.Base.StdL.IS
+namespace ToyBox.StdLib.IS
 {
     public class BufferProperty
     {

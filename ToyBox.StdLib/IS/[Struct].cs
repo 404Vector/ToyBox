@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using OpenCvSharp;
+using ToyBox.StdLib.Mvvm;
 
-namespace HYCK.Base.StdL.IS
+namespace ToyBox.StdLib.IS
 {
     public class St_Defect
     {

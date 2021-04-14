@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static HYCK.Base.StdL.IS.MILConst;
+using static ToyBox.StdLib.IS.MILConst;
 
-namespace HYCK.Base.StdL.IS
+namespace ToyBox.StdLib.IS
 {
     public enum ScanDirectionType
     {

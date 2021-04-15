@@ -9,12 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.ML" Version="1.5.5" />
-    <PackageReference Include="Microsoft.ML.LightGbm" Version="1.5.5" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ToyBox.StdLib\ToyBox.StdLib.csproj" />
+    <ProjectReference Include="..\ToyBox.ML\ToyBox.ML.csproj" />
   </ItemGroup>
 
   <ItemGroup>

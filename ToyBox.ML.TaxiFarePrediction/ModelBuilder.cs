@@ -13,8 +13,8 @@ namespace ToyBox.ML.TaxiFarePrediction
 {
     public class ModelBuilder : IModelBuilder
     {
-        private string trainDataFilePath = @"D:\Git\404Vector\ToyBox\ToyBox.ML.TaxiFarePrediction\Dataset\taxi-fare-train.csv";
-        private string modelFilePath = @"C:\Users\HYC korea\AppData\Local\Temp\MLVSTools\ToyBoxML\ToyBoxML.Model\MLModel.zip";
+        private string trainDataFilePath;
+        private string modelFilePath;
 
         // Create MLContext to be shared across the model creation workflow objects
         // Set a random seed for repeatable/deterministic results across multiple trainings.
@@ -26,6 +26,8 @@ namespace ToyBox.ML.TaxiFarePrediction
 
         public void CreateModel()
         {
+            trainDataFilePath = IModelBuilder.GetFilePath();
+            modelFilePath = IModelBuilder.SetFilePath();
             // Load Data
             IDataView trainingDataView = mlContext.Data.LoadFromTextFile<ModelInput>(
                                             path: trainDataFilePath,

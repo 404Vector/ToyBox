@@ -12,14 +12,15 @@ namespace ToyBox.ML.Model
     {
         private static Lazy<PredictionEngine<TSrc, TDst>> PredictionEngine = new Lazy<PredictionEngine<TSrc, TDst>>(CreatePredictionEngine);
 
+        public static string ModelPath { get; set; } = IModelBuilder.GetAbsolutePath(@"Model\MLModel.zip");
+
         public static PredictionEngine<TSrc, TDst> CreatePredictionEngine()
         {
             // Create new MLContext
             MLContext mlContext = new MLContext();
 
             // Load model & create prediction engine
-            string modelPath = Environment.CurrentDirectory + @"\Model\MLModel.zip";
-            ITransformer mlModel = mlContext.Model.Load(modelPath, out var modelInputSchema);
+            ITransformer mlModel = mlContext.Model.Load(ModelPath, out var modelInputSchema);
             var predEngine = mlContext.Model.CreatePredictionEngine<TSrc, TDst>(mlModel);
 
             return predEngine;

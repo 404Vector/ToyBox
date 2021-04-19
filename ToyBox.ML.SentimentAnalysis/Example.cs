@@ -43,12 +43,16 @@ namespace ToyBox.ML.SentimentAnalysis
 
         private static ITransformer BuildAndTrainModel(MLContext mLContext, IDataView splitTrainSet)
         {
+            var path = IModelBuilder.GetAbsolutePath(@"Model\Model.zip");
             var estimator = mLContext.Transforms.Text.FeaturizeText(outputColumnName: "Features", inputColumnName: nameof(Model.ModelInput.SentimentText));
             var trainer = mLContext.BinaryClassification.Trainers.SdcaLogisticRegression(labelColumnName: "Label", featureColumnName: "Features");
             var trainingPipelne = estimator.Append(trainer);
             Console.WriteLine("=============== Create and Train the Model ===============");
             var model = trainingPipelne.Fit(splitTrainSet);
             Console.WriteLine("=============== End of training ===============");
+            Console.WriteLine("=============== Save Model ===============");
+            mLContext.Model.Save(model, splitTrainSet.Schema, path);
+            Console.WriteLine("=============== End of saving ===============");
             Console.WriteLine();
             return model;
         }

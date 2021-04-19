@@ -10,6 +10,11 @@
         Title="Toy Box" Height="720" Width="1024">
     <Grid>
         <mah:MetroAnimatedTabControl>
+            <TabItem Header="MariaDB">
+                <ScrollViewer Margin="10">
+                    <view:MariaDBView />
+                </ScrollViewer>
+            </TabItem>
             <TabItem Header="Taxi Fare Prediction">
                 <ScrollViewer Margin="10">
                     <view:TaxiFarePredictionView />

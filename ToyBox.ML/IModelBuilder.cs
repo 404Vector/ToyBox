@@ -2,6 +2,7 @@
 
 using Microsoft.ML;
 using Microsoft.ML.Data;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -20,6 +21,28 @@ namespace ToyBox.ML
         void CreateModel();
 
         ITransformer TrainModel(MLContext mlContext, IDataView trainingDataView, IEstimator<ITransformer> trainingPipeline);
+
+        public static string GetFilePath()
+        {
+            var dialog = new OpenFileDialog();
+            if (dialog.ShowDialog() == true)
+            {
+                return dialog.FileName;
+            }
+
+            return "";
+        }
+
+        public static string SetFilePath()
+        {
+            var dialog = new SaveFileDialog();
+            if (dialog.ShowDialog() == true)
+            {
+                return dialog.FileName;
+            }
+
+            return "";
+        }
 
         public static void Evaluate(MLContext mlContext, IDataView trainingDataView, IEstimator<ITransformer> trainingPipeline)
         {

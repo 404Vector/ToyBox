@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Model\MLModel.zip">
+    <None Update="Model\ToyBox.ML.TaxiFarePrediction.Model.Context.zip">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

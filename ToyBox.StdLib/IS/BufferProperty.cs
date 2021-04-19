@@ -5,13 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-using static ToyBox.StdLib.IS.MILConst;
-
 namespace ToyBox.StdLib.IS
 {
     public class BufferProperty
     {
-        public long Attriute { get; set; } = M_IMAGE + M_GRAB + M_PROC + M_DISP;
+        public long Attriute { get; set; }
 
         public ImageBandType BandType { get; set; } = ImageBandType.Null;
 

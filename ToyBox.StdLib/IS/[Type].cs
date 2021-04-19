@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static ToyBox.StdLib.IS.MILConst;
 
 namespace ToyBox.StdLib.IS
 {
@@ -41,16 +40,16 @@ namespace ToyBox.StdLib.IS
     public enum ImageDataType
     {
         Null = -1,
-        UNSIGNED1 = M_UNSIGNED + 0,
-        UNSIGNED8 = M_UNSIGNED + 8,
-        UNSIGNED16 = M_UNSIGNED + 16,
-        UNSIGNED32 = M_UNSIGNED + 32,
-        SIGNED1 = M_SIGNED + 0,
-        SIGNED8 = M_SIGNED + 8,
-        SIGNED16 = M_SIGNED + 16,
-        SIGNED32 = M_SIGNED + 32,
-        FLOAT = M_FLOAT,
-        DOUBLE = -M_FLOAT,
+        UNSIGNED1 = 0 + 0,
+        UNSIGNED8 = 0 + 8,
+        UNSIGNED16 = 0 + 16,
+        UNSIGNED32 = 0 + 32,
+        SIGNED1 = 128 + 0,
+        SIGNED8 = 128 + 8,
+        SIGNED16 = 128 + 16,
+        SIGNED32 = 128 + 32,
+        FLOAT = 256,
+        DOUBLE = -256,
     }
 
     public enum CvImageDepthType
@@ -88,13 +87,13 @@ namespace ToyBox.StdLib.IS
 
     public enum GCFType : long
     {
-        Bool = M_TYPE_BOOLEAN,
-        Category = M_TYPE_CATEGORY,
-        Command = M_TYPE_COMMAND,
-        Double = M_TYPE_DOUBLE,
-        Enumeration = M_TYPE_ENUMERATION,
-        Long = M_TYPE_INT64,
-        Register = M_TYPE_REGISTER,
-        String = M_TYPE_STRING,
+        Bool,
+        Category,
+        Command,
+        Double,
+        Enumeration,
+        Long,
+        Register,
+        String,
     }
 }

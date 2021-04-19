@@ -2,11 +2,12 @@
 
 using System;
 using Microsoft.ML.Data;
+using ToyBox.ML.Model;
 using ToyBox.StdLib.Mvvm;
 
 namespace ToyBox.ML.TaxiFarePrediction.Model
 {
-    public class ModelOutput : NotifyPropertyChanged
+    public class ModelOutput : ModelOutputBase
     {
         private float score;
 

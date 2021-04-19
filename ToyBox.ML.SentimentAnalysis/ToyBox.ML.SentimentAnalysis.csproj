@@ -1,19 +1,19 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Dataset\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ToyBox.ML\ToyBox.ML.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Model\ToyBox.ML.TaxiFarePrediction.Model.Context.zip">
+    <Folder Include="Dataset\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Dataset\yelp_labelled.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

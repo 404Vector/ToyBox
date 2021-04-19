@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ML" Version="1.5.5" />
+    <PackageReference Include="Microsoft.ML.CpuMath" Version="1.5.5" />
+    <PackageReference Include="Microsoft.ML.FastTree" Version="1.5.5" />
+    <PackageReference Include="Microsoft.ML.LightGbm" Version="1.5.5" />
+    <PackageReference Include="Microsoft.ML.TensorFlow" Version="1.5.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ToyBox.StdLib\ToyBox.StdLib.csproj" />
+  </ItemGroup>
+</Project>

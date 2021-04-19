@@ -25,10 +25,10 @@ namespace ToyBox.App.GUI.ViewModel
     /// </summary>
     public class ViewModelLocator
     {
-        public object MainViewModel => SimpleIoc.Default.GetService(typeof(MainViewModel));
         public object SenderViewModel => SimpleIoc.Default.GetService(typeof(SenderViewModel));
         public object ReceiverViewModel => SimpleIoc.Default.GetService(typeof(ReceiverViewModel));
         public object TaxiFarePredictionViewModel => SimpleIoc.Default.GetService(typeof(TaxiFarePredictionViewModel));
+        public object MariaDBViewModel => SimpleIoc.Default.GetService(typeof(MariaDBViewModel));
 
         /// <summary>
         /// Initializes a new instance of the ViewModelLocator class.
@@ -38,6 +38,7 @@ namespace ToyBox.App.GUI.ViewModel
             SimpleIoc.Default.Register<SenderViewModel>();
             SimpleIoc.Default.Register<ReceiverViewModel>();
             SimpleIoc.Default.Register<TaxiFarePredictionViewModel>();
+            SimpleIoc.Default.Register<MariaDBViewModel>();
         }
     }
 }

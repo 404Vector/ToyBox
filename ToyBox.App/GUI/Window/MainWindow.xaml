@@ -7,11 +7,18 @@
         xmlns:local="clr-namespace:ToyBox.App.GUI.Window"
         mc:Ignorable="d"
         xmlns:view="clr-namespace:ToyBox.App.GUI.View"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Toy Box" Height="720" Width="1024">
     <Grid>
         <mah:MetroAnimatedTabControl>
+            <TabItem Header="MariaDB">
+                <ScrollViewer Margin="10">
+                    <view:MariaDBView />
+                </ScrollViewer>
+            </TabItem>
             <TabItem Header="Taxi Fare Prediction">
-                <view:TaxiFarePredictionView />
+                <ScrollViewer Margin="10">
+                    <view:TaxiFarePredictionView />
+                </ScrollViewer>
             </TabItem>
             <TabItem Header="MVVM Test">
                 <Grid>

@@ -7,7 +7,7 @@ using System.Text;
 using Microsoft.ML;
 using ToyBox.ML.Model;
 
-namespace ToyBox.ML.TaxiFarePrediction.Model
+namespace ToyBox.ML.SentimentAnalysis.Model
 {
     public class ConsumeModel : ConsumeModelBase<ModelInput, ModelOutput>
     {

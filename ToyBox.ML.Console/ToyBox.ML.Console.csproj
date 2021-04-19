@@ -1,18 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net5.0-windows</TargetFramework>
-    <UseWPF>true</UseWPF>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MySqlConnector" Version="1.3.3" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ToyBox.ML.SentimentAnalysis\ToyBox.ML.SentimentAnalysis.csproj" />
     <ProjectReference Include="..\ToyBox.ML.TaxiFarePrediction\ToyBox.ML.TaxiFarePrediction.csproj" />
-    <ProjectReference Include="..\ToyBox.StdLib\ToyBox.StdLib.csproj" />
   </ItemGroup>
 </Project>

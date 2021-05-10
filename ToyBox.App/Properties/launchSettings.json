@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ToyBox.App": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

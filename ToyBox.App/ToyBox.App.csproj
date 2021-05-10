@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ToyBox.IP\ToyBox.IP.vcxproj" />
     <ProjectReference Include="..\ToyBox.ML.SentimentAnalysis\ToyBox.ML.SentimentAnalysis.csproj" />
     <ProjectReference Include="..\ToyBox.ML.TaxiFarePrediction\ToyBox.ML.TaxiFarePrediction.csproj" />
     <ProjectReference Include="..\ToyBox.StdLib\ToyBox.StdLib.csproj" />
